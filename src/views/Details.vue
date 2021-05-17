@@ -7,7 +7,7 @@
     </div>
     <div class=" flex mt-10 justify-center px-4">
     
-    <div class="max-w-12xl  bg-gray-100 w-full rounded-lg shadow-xl" v-if="user.length > 0">
+    <div class="max-w-12xl  bg-gray-100 w-full rounded-lg shadow-xl" v-if="user">
         <div class="p-4 border-b">
             <h2 class="text-2xl ">
                 {{user.firstname}} {{user.lastname}}
@@ -100,7 +100,7 @@ export default {
     data() {
         return {
             id: 0,
-            user: []
+            user: ""
         }
     },
     created() {
